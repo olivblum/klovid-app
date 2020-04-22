@@ -6,6 +6,9 @@
 
 3. Various statistics and graphics that you never wanted.
 
+also check out my selfmade "translation automation" tool:
+https://docs.google.com/spreadsheets/d/1Mib16yvAItV1M0MdrNIJtraNZlDTwkFKxvegTAa3hRM/edit#gid=1464492163
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
