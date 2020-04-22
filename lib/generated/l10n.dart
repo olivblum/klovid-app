@@ -488,7 +488,7 @@ class S {
 
   String get imVergleichZumDurchschnitt {
     return Intl.message(
-      'compared to the average',
+      'compared to countries\' average [in sheets]',
       name: 'imVergleichZumDurchschnitt',
       desc: '',
       args: [],
@@ -497,7 +497,7 @@ class S {
 
   String get durchschnittInDeutschland {
     return Intl.message(
-      'Average in Germany',
+      'Germany',
       name: 'durchschnittInDeutschland',
       desc: '',
       args: [],
@@ -688,6 +688,69 @@ class S {
     return Intl.message(
       'Share results',
       name: 'ergebnisTeilen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get usa {
+    return Intl.message(
+      'USA',
+      name: 'usa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get uk {
+    return Intl.message(
+      'UK',
+      name: 'uk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get denmark {
+    return Intl.message(
+      'Denmark',
+      name: 'denmark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get spain {
+    return Intl.message(
+      'Spain',
+      name: 'spain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get brazil {
+    return Intl.message(
+      'Brazil',
+      name: 'brazil',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get zustzlicherVerbrauch {
+    return Intl.message(
+      'Additional Usage',
+      name: 'zustzlicherVerbrauch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get monatlichZbWegenPeriode {
+    return Intl.message(
+      'monthly, e.g. because of period',
+      name: 'monatlichZbWegenPeriode',
       desc: '',
       args: [],
     );

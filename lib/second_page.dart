@@ -213,7 +213,12 @@ class SecondPageState extends State<SecondPage> {
                     (BuildContext context, int index) {
                   var data = [
                     ClicksPerYear(S.of(context).du, verbrauch_piss_30+verbrauch_shit_30, Colors.amber[800]),
-                    ClicksPerYear(S.of(context).durchschnittInDeutschland, 30*57, Colors.lightBlue),
+                    ClicksPerYear(S.of(context).usa, 1896, Colors.lightBlue),
+                    ClicksPerYear(S.of(context).durchschnittInDeutschland, 1792, Colors.lightBlue),
+                    ClicksPerYear(S.of(context).uk, 1688, Colors.lightBlue),
+                    ClicksPerYear(S.of(context).denmark, 1600, Colors.lightBlue),
+                    ClicksPerYear(S.of(context).spain, 1083, Colors.lightBlue),
+                    ClicksPerYear(S.of(context).brazil, 500, Colors.lightBlue),
                   ];
 
                   var series = [

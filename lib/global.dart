@@ -10,6 +10,7 @@ int wipecounter = 0;
 int avgshitcounter = 0;
 int pisscounter = 0;
 int avgpisscounter = 0;
+int additionalcounter = 0;
 int peoplecounter = 1;
 int rollcounter = 0;
 double verbrauch = 0; //Klopapier "blätter" pro Tag

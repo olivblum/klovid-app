@@ -177,6 +177,25 @@ class _FirstPageState extends State<FirstPage> with SingleTickerProviderStateMix
     });
   }
 
+  void _additionalCountDown() {
+    setState(() {
+      global.ispressed = false;
+      if (global.additionalcounter == 0) {
+        global.additionalcounter=global.additionalcounter+10;
+        vibrate();
+      }
+      global.additionalcounter=global.additionalcounter-10;
+      checkCalculation();
+    });
+  }
+  void _additionalCountUp() {
+    setState(() {
+      global.ispressed = false;
+      global.additionalcounter=global.additionalcounter+10;
+      checkCalculation();
+    });
+  }
+
   void _peopleCountDown() {
     setState(() {
       global.ispressed = false;
@@ -243,10 +262,10 @@ class _FirstPageState extends State<FirstPage> with SingleTickerProviderStateMix
       //papercounter = papercounterdouble.round();
       global.verbrauch_shit =
           global.shitcounter * global.wipecounter * global.avgshitcounter /
-              7; //täglicher Verbrauch
-      global.verbrauch_piss = global.pisscounter * global.avgpisscounter;
+              7; //täglicher Verbrauch Shit
+      global.verbrauch_piss = global.pisscounter * global.avgpisscounter; //täglicher Verbrauch piss
       global.verbrauch =
-          global.verbrauch_piss.toDouble() + global.verbrauch_shit;
+          global.verbrauch_piss.toDouble() + global.verbrauch_shit + global.additionalcounter.toDouble()/30;  //additional durch 30 teilen um auf pro Tag zu kommen
       global.dayscalculateddouble =
           global.rollcounter.toDouble() * global.blatter / global.verbrauch /
               global.peoplecounter;
@@ -291,6 +310,7 @@ class _FirstPageState extends State<FirstPage> with SingleTickerProviderStateMix
       global.avgshitcounter=1;
       global.pisscounter=1;
       global.avgpisscounter=1;
+      global.additionalcounter=0;
     });
   }
 
@@ -480,7 +500,7 @@ class _FirstPageState extends State<FirstPage> with SingleTickerProviderStateMix
                       ],
                     ),
                   ),
-                  Divider(),
+                  //Divider(),
                   ListTile(
                     title: Text(
                       S.of(context).papierverbrauch,),
@@ -502,6 +522,43 @@ class _FirstPageState extends State<FirstPage> with SingleTickerProviderStateMix
                         IconButton(
                           icon: Icon(Icons.add_circle_outline),
                           onPressed: _avgPissCountUp,
+                          tooltip: 'more',
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            new Card( //Additionals
+              elevation: 3,
+              child: Column(
+                children: <Widget>[
+                  ListTile(
+                    title: Text(
+                      S.of(context).zustzlicherVerbrauch, style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                    )
+                    ),
+                    subtitle: Text(S.of(context).monatlichZbWegenPeriode),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.remove_circle_outline),
+                          onPressed: _additionalCountDown,
+                          tooltip: 'no need',
+                        ),
+                        Text(
+                          ' ${global.additionalcounter} ',
+                          style: TextStyle(fontWeight: FontWeight.bold,
+                              fontSize: 25.0,
+                              color: Colors.blue),
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.add_circle_outline),
+                          onPressed: _additionalCountUp,
                           tooltip: 'more',
                         ),
                       ],

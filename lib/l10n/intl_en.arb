@@ -50,8 +50,8 @@
   "inBlttern": "[in sheets]",
   "groeGeschfte": "Big businesses",
   "verbrauchProMonat": "Usage per month",
-  "imVergleichZumDurchschnitt": "compared to the average",
-  "durchschnittInDeutschland": "Average in Germany",
+  "imVergleichZumDurchschnitt": "compared to countries' average [in sheets]",
+  "durchschnittInDeutschland": "Germany",
   "du": "You",
   "soLangeHltDeinVorrat": "Days your stock lasts",
   "deinVorratInTagen": "Your stock in days",
@@ -72,5 +72,12 @@
   "inZeitenVonHamsterkufenUndLeerenKlopapierregalenHilftDieseApp": "In these dire times of panic buying and empty toiletpaper shelves this app helps assess the personal toilet paper situation correctly. The original idea was to demonstrate that some hoarding is possibly exaggerated. \n\nAll data that you enter in the app, of course is not saved. If you want to contribute to the data, please fill out the survey. Then I update the app. There is also additional information asked, which could possibly provide new statistics \n \nAdditionally you can tell me if you miss a parameter, or if you have additional ideas. \n",
   "ffneUmfrage": "Survey/Feedback",
   "durchschnitt": "   Average",
-  "ergebnisTeilen": "Share results"
+  "ergebnisTeilen": "Share results",
+  "usa": "USA",
+  "uk": "UK",
+  "denmark": "Denmark",
+  "spain": "Spain",
+  "brazil": "Brazil",
+  "zustzlicherVerbrauch": "Additional Usage",
+  "monatlichZbWegenPeriode": "monthly, e.g. because of period"
 }

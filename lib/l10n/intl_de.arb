@@ -50,8 +50,8 @@
   "inBlttern": "[in Blättern]",
   "groeGeschfte": "große Geschäfte",
   "verbrauchProMonat": "Verbrauch pro Monat",
-  "imVergleichZumDurchschnitt": "im Vergleich zum Durchschnitt",
-  "durchschnittInDeutschland": "Durchschnitt in Deutschland",
+  "imVergleichZumDurchschnitt": "im Vergleich zum Durchschnitt verschiedener Länder [in Blättern]",
+  "durchschnittInDeutschland": "Deutschland",
   "du": "Du",
   "soLangeHltDeinVorrat": "So lange hält dein Vorrat",
   "deinVorratInTagen": "Dein Vorrat in Tagen",
@@ -72,5 +72,12 @@
   "inZeitenVonHamsterkufenUndLeerenKlopapierregalenHilftDieseApp": "In Zeiten von Hamsterkäufen und leeren Klopapierregalen hilft diese App die persönliche Klopapierlage richtig einzuschätzen. Die ursprüngliche Idee war zu demonstrieren, dass manche Hamsterkäufe etwas übertrieben sind.\n\nAlle Daten, die du in die App eintippst, werden natürlich nicht gespeichert. Wenn du deine Daten beitragen willst,dann füll die Umfrage aus. Daraus update ich daraufhin die App. Dort werden auch zusätzliche Infos abgefragt, die ich noch in die App aufnehmen will.\n\nAußerdem kannst du mir mitteilen, wenn dir ein Parameter fehlt, oder du zusätzliche Ideen hast. \n",
   "ffneUmfrage": "Öffne Umfrage",
   "durchschnitt": "    Durchschnitt",
-  "ergebnisTeilen": "Ergebnis teilen"
+  "ergebnisTeilen": "Ergebnis teilen",
+  "usa": "USA",
+  "uk": "UK",
+  "denmark": "DK",
+  "spain": "Spanien",
+  "brazil": "Brasilien",
+  "zustzlicherVerbrauch": "Zusätzlicher Verbrauch",
+  "monatlichZbWegenPeriode": "monatlich, z.B. wegen Periode"
 }
